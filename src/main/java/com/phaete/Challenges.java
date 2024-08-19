@@ -58,4 +58,15 @@ public class Challenges {
     public static boolean isPositive(int a) {
         return a > 0;
     }
+
+    // BONUS: Did she say hello?
+    public static boolean isGreeting(String a) {
+        String[] greetings = {"hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"};
+        for (String greeting : greetings) {
+            if (a.toLowerCase().contains(greeting)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
